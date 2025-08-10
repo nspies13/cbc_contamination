@@ -8,14 +8,14 @@ suppressPackageStartupMessages({
 
 #' Makes predictions from pre-trained models
 #'
-#' Usage: Rscript standalone_make_predictions.R input.csv models.RDS /output_path
+#' Usage: Rscript scripts/standalone_make_predictions.R input.csv models.RDS /output_path
 #'
 #' The input file must be of the same shape as the output from standalone_cbc_preprocessing.R, while the models should be in list form. 
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) < 2) {
   stop(
-    "Usage: Rscript standalone_make_predictions.R input.csv models.RDS /output_path",
+    "Usage: Rscript scripts/standalone_make_predictions.R input.csv models.RDS /output_path",
     call. = FALSE
   )
 }

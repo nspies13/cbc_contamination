@@ -6,7 +6,7 @@ suppressPackageStartupMessages({
 
 #' Preprocess a long-form CBC CSV file.
 #'
-#' Usage: Rscript preprocess_long_form_cbc.R input.csv output_folder/
+#' Usage: Rscript scripts/standalone_cbc_preprocessing.R input.csv output_folder/
 #'
 #' The input file must contain columns:
 #'   PATIENT_ID - Patient identifier
@@ -21,7 +21,7 @@ suppressPackageStartupMessages({
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) < 2) {
-  stop("Usage: Rscript standalone_cbc_preprocessing.R input.csv output_folder/", call. = FALSE)
+  stop("Usage: Rscript scripts/standalone_cbc_preprocessing.R input.csv output_folder/", call. = FALSE)
 }
 
 input_path <- args[1]

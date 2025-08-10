@@ -8,14 +8,14 @@ suppressPackageStartupMessages({
 
 #' Trains ML models using simulated CBC contamination
 #'
-#' Usage: Rscript standalone_train_cbc_ML_models.R input.csv /output_path
+#' Usage: Rscript scripts/standalone_train_cbc_ML_models.R input.csv /output_path
 #'
 #' The input file must be of the same shape as the output from standalone_simulate_cbc_contamination.R
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) < 2) {
   stop(
-    "Usage: Rscript standalone_train_cbc_ML_models.R input.csv /output_path",
+    "Usage: Rscript scripts/standalone_train_cbc_ML_models.R input.csv /output_path",
     call. = FALSE
   )
 }
