@@ -1134,6 +1134,12 @@
       ],
       "Hash": "b8552d117e1b808b09a832f589b79035"
     },
+    "lightgbm": {
+      "Package": "lightgbm",
+      "Version": "4.6.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
     "listenv": {
       "Package": "listenv",
       "Version": "0.9.1",
