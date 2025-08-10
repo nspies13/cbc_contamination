@@ -6,13 +6,13 @@ suppressPackageStartupMessages({
 
 #' Simulates contamination in a filtered, wide-form, cbc data set
 #'
-#' Usage: Rscript standalone_simulate_cbc_contamination input.csv /output_path
+#' Usage: Rscript scripts/standalone_simulate_cbc_contamination.R input.csv /output_path
 #'
 #' The input file must take the same shape as the output files from standalone_cbc_preprocessing.R
 
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) < 2) {
-  stop("Usage: Rscript standalone_simulate_cbc_contamination input.csv /output_path", call. = FALSE)
+  stop("Usage: Rscript scripts/standalone_simulate_cbc_contamination.R input.csv /output_path", call. = FALSE)
 }
 
 input_path <- args[1]
