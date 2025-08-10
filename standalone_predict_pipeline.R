@@ -33,7 +33,7 @@ message("Preprocessing CBC data...")
 system2(
   "Rscript",
   c(
-    file.path(script_dir, "standalone_cbc_preprocessing.R"),
+    file.path(script_dir, "scripts", "standalone_cbc_preprocessing.R"),
     input_path,
     paste0(script_dir, "/results/")
   )
@@ -50,7 +50,7 @@ message("Generating predictions...")
 system2(
   "Rscript",
   c(
-    file.path(script_dir, "standalone_make_predictions.R"),
+    file.path(script_dir, "scripts", "standalone_make_predictions.R"),
     preproc_out,
     model_path,
     paste0(script_dir, "/results/")

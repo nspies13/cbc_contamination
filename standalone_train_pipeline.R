@@ -28,7 +28,7 @@ message("Preprocessing CBC data...")
 system2(
   "Rscript",
   c(
-    file.path(script_dir, "standalone_cbc_preprocessing.R"),
+    file.path(script_dir, "scripts", "standalone_cbc_preprocessing.R"),
     input_path,
     paste0(script_dir, "/results/")
   )
@@ -44,7 +44,7 @@ message("Simulating contamination...")
 system2(
   "Rscript",
   c(
-    file.path(script_dir, "standalone_simulate_cbc_contamination.R"),
+    file.path(script_dir, "scripts", "standalone_simulate_cbc_contamination.R"),
     preproc_out,
     paste0(script_dir, "/results/")
   )
@@ -60,7 +60,7 @@ message("Training models...")
 system2(
   "Rscript",
   c(
-    file.path(script_dir, "standalone_train_cbc_ML_models.R"),
+    file.path(script_dir, "scripts", "standalone_train_cbc_ML_models.R"),
     sim_out,
     paste0(script_dir, "/models/")
   )
