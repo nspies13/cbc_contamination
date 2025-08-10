@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-
+renv::restore()
 suppressPackageStartupMessages({
   library(tidyverse)
   library(tidymodels)
