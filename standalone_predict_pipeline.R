@@ -1,4 +1,8 @@
 #!/usr/bin/env Rscript
+if (!requireNamespace("renv", quietly = TRUE)) {
+  # If not installed, install it
+  install.packages("renv")
+}
 renv::restore()
 suppressPackageStartupMessages({
   library(tidyverse)
