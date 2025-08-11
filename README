@@ -1,1 +1,2 @@
 # Stand-alone CBC Contamination Scripts
+Input data must be long-form CBC results with four columns: PATIENT_ID, DRAWN_DT_TM, ASSAY, RESULT. 
