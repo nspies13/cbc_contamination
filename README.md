@@ -1,2 +1,5 @@
 # Stand-alone CBC Contamination Scripts
 Input data must be long-form CBC results with four columns: ***PATIENT_ID, DRAWN_DT_TM, ASSAY, RESULT***. An example can be found in *data/sample_cbc_input.csv*.  
+
+`Rscript standalone_train_pipeline.R <input_cbc_data>`
+
