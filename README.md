@@ -3,7 +3,7 @@ Input data must be long-form CBC results with four columns: ***PATIENT_ID, DRAWN
 
 Run the model training script using: 
 ```
-Rscript standalone_train_pipeline.R <input_cbc_training_data>
+Rscript standalone_train_pipeline.R <path_to_input_cbc_training_data>
 ```
 
 Run the inference script using: 
